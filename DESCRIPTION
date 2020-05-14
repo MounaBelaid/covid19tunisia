@@ -8,6 +8,7 @@ Authors@R:
            email = "belaid.mounaa@gmail.com")
 Description: Data personnally collected about the spread of covid-19 (SARS-COV-2) in Tunisia.
 <https://github.com/opencovid19-fr/data> data on COVID-19 in France
+URL: LINK TO PKGDOWN OR GITHUB REPO
 License: MIT + file LICENSE
 Depends:
     R (>= 3.0.2)
