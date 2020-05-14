@@ -1,0 +1,13 @@
+^YOUR_PACKAGE_NAME\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^README\.Rmd$
+^cran-comments\.md$
+^\.github$
+^CODE_OF_CONDUCT\.md$
+^data-raw$
+^docs$
+setupcode.R
+testcode.R
+^\.travis\.yml$
+^CRAN-RELEASE$

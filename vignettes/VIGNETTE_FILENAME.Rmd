@@ -1,0 +1,21 @@
+---
+title: "VIGNETTE TITLE"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{VIGNETTE TITLE}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+TELL US ABOUT THE DATA
+
+TELL US WHAT YOU'RE GOING TO SHOW WITH THE DATA
+
+SHOW A WORKFLOW OF LOADING AND USING THE DATA

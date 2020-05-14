@@ -1,0 +1,90 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+```{r load_main, include = FALSE}
+#downloads from the documentation project
+url <- "https://raw.githubusercontent.com/Covid19R/documentation/master/onboarding.Rmd"
+download.file(url, "tmp.Rmd")
+
+```
+
+```{r import-main, child = 'tmp.Rmd'}
+```
+
+```{r unlink, include = FALSE}
+unlink("tmp.Rmd")
+```
+
+-----------
+
+# YOUR_PACKAGE_NAME
+
+<!-- badges: start -->
+[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-orange.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![CRAN status](https://www.r-pkg.org/badges/version/YOUR_PACKAGE)](https://CRAN.R-project.org/package=YOUR_PACKAGE)
+[![Travis build status](https://travis-ci.org/Covid19R/YOUR_PACKAGE.svg?branch=master)](https://travis-ci.org/USER_OR_ORG/YOUR_PACKAGE)
+<!-- badges: end -->
+
+The  YOUR_PACKAGE package harvests the data made freely available by the XXX. See USEFUL_URL_ABOUT_DATA for more.
+
+## Installation
+
+ONLY INCLUDE IF SUBMITTED TO/ON CRAN You can install the released version of covid19nytimes from [CRAN](https://CRAN.R-project.org) with:
+
+``` {r install, eval=FALSE}
+install.packages("YOUR_PACKAGE")
+```
+
+Or the latest development version from [github](https://github.com/USER_OR_ORG/YOUR_PACKAGE)
+
+```{r install_github, eval = FALSE}
+devtools::install_github("USER_OR_ORG/YOUR_PACKAGE")
+```
+
+## Data
+
+The package has the data from XXXXXX. The package comes with static data that was downloaded at the time of the last package update.
+
+```{r head_of_data, eval = FALSE}
+library(YOUR_LIBRARY_NAME)
+
+head(DATA) %>% knitr::kable()
+
+```
+
+## Getting the Most Up to Date Data
+
+To get the most updated data, run the following functions
+
+```{r refresh}
+```
+
+## Columns
+
+The data follows the [covid19R standard for tidy Covid-19 data](https://covid19r.github.io/documentation/data-format-standard.html). The data columns are as follows:
+
+* date - The date in YYYY-MM-DD form
+* location - The name of the location as provided by the data source. Nested locations are combined and separated by a `,`, and can be split by `tidyr::separate()`, if you wish.
+* location_type - The type of location using the [Covid19R Controlled Vocabulary](https://covid19r.github.io/documentation/standardized-vocabulary.html). Nested locations are indicated by multiple location types being combined with a `_`
+* location_code - A standardized location code using a national or international standard. MORE HERE
+* location_code_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use `XXX`
+* data_type - the type of data in that given row from the [Covid19R Controlled Vocabulary](https://covid19r.github.io/documentation/standardized-vocabulary.html). What is here?
+* value - number of cases of each data type
+* OTHER COLUMNS - WHAT THEY MEAN
+
+## Sample visualization
+
+```{r example_plot}
+```
