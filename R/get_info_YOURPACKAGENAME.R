@@ -12,23 +12,33 @@
 #' get_info_YOURPACKAGENAME()
 #' }
 #'
-get_info_YOURPACKAGENAME <- function() {
-
+get_info_covid19tunisia <- function() {
+ latest_data <-
+    refresh_covid19france(verbose = FALSE)
+  
   tibble::tribble(
     ~data_set_name, ~package_name, ~function_to_get_data,
     ~data_details, ~data_url, ~license_url,
     ~data_types, ~location_types,
     ~spatial_extent, ~has_geospatial_info,
 
-    "DATASET_NAME",
-    "YOURPACKAGENAME",
-    "refresh_YOURPACKAGENAME_*",
-    "DESCRIPTION OF THE DATA",
+    "covid19tunisia",
+    "covid19tunisia",
+    "refresh_covid19tunisia",
+    "Open Source data from the Tunisian ministry of health on distribution of confirmed Covid-19 cases and deaths in Tunisia.",
     "URL THIS DATASET COMES FROM",
     "URL OF THE LICENSE",
-    "DATA_TYPE_1,DATA_TYPE_2,...", #COMMA SEPARATED STRING OF DATA TYPES
-    "LOCATION_TYPE_1,LOCATION_TYPE_2", #COMMA SEPARATED STRING OF LOCATION TYPES
-    "EXTENT", #HOW LARGE IS THE AREA COVERED BY THE WHOLE DATASET? COUNTRY? CONTINENT? WORLD? OTHER?
+     latest_data %>%
+       tidyr::drop_na(data_type) %>%
+       dplyr::pull(data_type) %>%
+       unique() %>%
+       stringr::str_c(collapse = ", "), #COMMA SEPARATED STRING OF DATA TYPES
+     latest_data %>%
+       tidyr::drop_na(location_type) %>%
+       dplyr::pull(location_type) %>%
+       unique() %>%
+       stringr::str_c(collapse = ", "), #COMMA SEPARATED STRING OF LOCATION TYPES
+    "country", #HOW LARGE IS THE AREA COVERED BY THE WHOLE DATASET? COUNTRY? CONTINENT? WORLD? OTHER?
     FALSE #IS THERE GEOSPATIAL INFORMATION, E.G. LAT/LONG? TRUE/FALSE
   )
 }
