@@ -3,7 +3,7 @@
 #---------------------------
 
 setwd(here::here())
-source("./R/refresh_YOURPACKAGENAME.R")
+source("./R/refresh_covid19tunisia.R")
 
 YOURPACKAGENAME_demo <- refresh_YOURPACKAGENAME()
 
