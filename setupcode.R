@@ -10,7 +10,7 @@ library(usethis)
 # setup package
 use_code_of_conduct()
 use_data_raw()
-# use_LICENSE_FUNCTION()
+use_LICENSE_FUNCTION()
 
 # imports packages
 use_package("magrittr")
