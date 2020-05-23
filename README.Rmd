@@ -12,22 +12,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r load_main, include = FALSE}
-#downloads from the documentation project
-url <- "https://raw.githubusercontent.com/Covid19R/documentation/master/onboarding.Rmd"
-download.file(url, "tmp.Rmd")
-
-```
-
-```{r import-main, child = 'tmp.Rmd'}
-```
-
-```{r unlink, include = FALSE}
-unlink("tmp.Rmd")
-```
-
------------
-
 # covid19tunisia
 
 <!-- badges: start -->
