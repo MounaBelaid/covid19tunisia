@@ -7,7 +7,7 @@
 #'
 #' @examples
 #' \donttest{
-#' refresh_covid19france()
+#' refresh_covid19tunisia()
 #' }
 refresh_covid19tunisia <- function(verbose = TRUE) {
   if (verbose) message(glue::glue("Downloading raw data from {url}."))
