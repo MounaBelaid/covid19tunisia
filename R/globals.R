@@ -7,17 +7,8 @@ globalVariables(
     "location_code",
     "location_code_type",
     "data_type",
-    "value",
-    "data_set_name",
-    "package_name",
-    "function_to_get_data",
-    "data_details",
-    "data_url",
-    "license_url",
-    "data_types",
-    "has_geospatial_info"
+    "value"
 
-    # unique to this dataset
 
   )
 )
