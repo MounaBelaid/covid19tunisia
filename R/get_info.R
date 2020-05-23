@@ -1,20 +1,15 @@
-#' Get information about the datasets provided by YOURPACKAGENAME
+#' Get information about the datasets provided by covid19tunisia
 #'
-#' @description Returns information about the datasets in this package for covid19R harvesting
-#'
-#' @return a tibble of information about the datasets in this package
-#' @export get_info_YOURPACKAGENAME
+#' @return A tibble with information about where the data is pulled from, details about the dataset, what the data types are, etc.
+#' @export
 #'
 #' @examples
-#' \dontrun{
-#'
-#' # get the dataset info from this package
-#' get_info_YOURPACKAGENAME()
+#' \donttest{
+#' get_info_covid19tunisia()
 #' }
-#'
 get_info_covid19tunisia <- function() {
  latest_data <-
-    refresh_covid19france(verbose = FALSE)
+    refresh_covid19tunisia(verbose = FALSE)
   
   tibble::tribble(
     ~data_set_name, ~package_name, ~function_to_get_data,
@@ -25,9 +20,10 @@ get_info_covid19tunisia <- function() {
     "covid19tunisia",
     "covid19tunisia",
     "refresh_covid19tunisia",
-    "Open Source data from the Tunisian ministry of health on distribution of confirmed Covid-19 cases and deaths in Tunisia.",
-    "URL THIS DATASET COMES FROM",
-    "URL OF THE LICENSE",
+    "Open Source data from the Tunisian ministry of health on distribution of confirmed Covid-19 cases and deaths in Tunisia.
+For more, https://github.com/MounaBelaid/covid19datatunisia.",
+    "https://github.com/MounaBelaid/covid19datatunisia/blob/master/dist/data.csv",
+    "https://github.com/MounaBelaid/covid19datatunisia/blob/master/LICENSE",
      latest_data %>%
        tidyr::drop_na(data_type) %>%
        dplyr::pull(data_type) %>%
