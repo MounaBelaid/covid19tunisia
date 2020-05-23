@@ -24,13 +24,13 @@ The  covid19tunisia package harvests the data made freely available by [Mouna Be
 
 ## Installation
 
-ONLY INCLUDE IF SUBMITTED TO/ON CRAN You can install the released version of covid19nytimes from [CRAN](https://CRAN.R-project.org) with:
+From CRAN:
 
 ``` {r install, eval=FALSE}
 install.packages("covid19tunisia")
 ```
 
-Or the latest development version from [github](https://github.com/USER_OR_ORG/covid19tunisia)
+the development version:
 
 ```{r install_github, eval = FALSE}
 devtools::install_github("USER_OR_ORG/covid19tunisia")
@@ -50,7 +50,7 @@ Get the full dataset:
 To switch to a wider format, you can use `tidyr`:
 
 ```{r}
-france %>% 
+tunisia %>% 
   tidyr::pivot_wider(
     names_from = "data_type"
   ) %>% 
