@@ -1,5 +1,5 @@
 #' ----------------------------------------
-#' Script to startup the a YOUR_PKG_NAME package
+#' Script to startup the a covid19tunisia package
 #' using usethis
 #' ----------------------------------------
 
