@@ -20,7 +20,7 @@ get_info_covid19tunisia <- function() {
     "covid19tunisia",
     "covid19tunisia",
     "refresh_covid19tunisia",
-    "Open Source data from the Tunisian ministry of health on distribution of confirmed Covid-19 cases and deaths in Tunisia.
+    "Open Source data on distribution of confirmed Covid-19 cases, recovered ones and deaths in Tunisia.
 For more, https://github.com/MounaBelaid/covid19datatunisia.",
     "https://github.com/MounaBelaid/covid19datatunisia/blob/master/dist/data.csv",
     "https://github.com/MounaBelaid/covid19datatunisia/blob/master/LICENSE",
