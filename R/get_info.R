@@ -22,7 +22,7 @@ get_info_covid19tunisia <- function() {
     "refresh_covid19tunisia",
     "Open Source data on distribution of confirmed Covid-19 cases, recovered ones and deaths in Tunisia.
 For more, https://github.com/MounaBelaid/covid19datatunisia.",
-    "https://github.com/MounaBelaid/covid19datatunisia/blob/master/dist/data.csv",
+    "https://raw.githubusercontent.com/MounaBelaid/covid19datatunisia/master/dist/data.csv",
     "https://github.com/MounaBelaid/covid19datatunisia/blob/master/LICENSE",
      latest_data %>%
        tidyr::drop_na(data_type) %>%
