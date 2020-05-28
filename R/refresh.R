@@ -9,11 +9,13 @@
 #' \donttest{
 #' refresh_covid19tunisia()
 #' }
-refresh_covid19tunisia <- function(verbose = TRUE) {
-  if (verbose) message(glue::glue("Downloading raw data from {url}."))
+refresh_covid19tunisia <- function() {
+  
+  #where is the data coming from
+  url <- "https://raw.githubusercontent.com/MounaBelaid/covid19datatunisia/master/dist/data.csv"
 
-  read_data() %>%
-    clean_data() %>%
-    average_data() %>%
-    enlongen_data()
+  # load the data
+  data <- read_csv("https://raw.githubusercontent.com/MounaBelaid/covid19datatunisia/master/dist/data.csv")
+  # return the data
+  data
 }
