@@ -44,7 +44,7 @@ library(covid19tunisia)
 Get the full dataset:
 
 ```{r}
-(france <- refresh_covid19tunisia())
+(tunisia <- refresh_covid19tunisia())
 ```
 
 To switch to a wider format, you can use `tidyr`:
