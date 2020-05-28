@@ -15,10 +15,5 @@ refresh_covid19tunisia <- function(verbose = TRUE) {
   if (verbose) message(glue::glue("Downloading raw data from {url}."))
 
   read_data()
-  
-  
-  # load the data
-    #data <- read_csv(url)
-  # return the data
-   # data
+
 }
