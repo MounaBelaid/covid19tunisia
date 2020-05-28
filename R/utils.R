@@ -8,13 +8,13 @@ read_data <- function() {
       url,
       col_types =
         readr::cols(
-          date = col_date(format = ""),
-          location = col_character(),
-          location_type = col_character(),
-          location_code = col_character(),
-          location_code_type = col_character(),
-          data_type = col_character(),
-          value = col_double()
+          date = readr::col_date(format = ""),
+          location = readr::col_character(),
+          location_type = readr::col_character(),
+          location_code = readr::col_character(),
+          location_code_type = readr::col_character(),
+          data_type = readr::col_character(),
+          value = readr::col_double()
         )
     )
   )
