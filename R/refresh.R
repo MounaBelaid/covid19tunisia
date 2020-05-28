@@ -15,7 +15,7 @@ refresh_covid19tunisia <- function() {
   url <- "https://raw.githubusercontent.com/MounaBelaid/covid19datatunisia/master/dist/data.csv"
 
   # load the data
-  data <- read_csv("https://raw.githubusercontent.com/MounaBelaid/covid19datatunisia/master/dist/data.csv")
+  data <- read_csv("url")
   # return the data
   data
 }
