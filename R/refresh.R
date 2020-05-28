@@ -13,10 +13,10 @@ refresh_covid19tunisia <- function() {
   
   #where is the data coming from
   url <- "https://raw.githubusercontent.com/MounaBelaid/covid19datatunisia/master/dist/data.csv"
-  if (verbose) message(glue::glue("Downloading raw data from {url}."))
-  read_data()
+  
+  
   # load the data
-  #data <- read_csv("url")
+  data <- read_csv(url)
   # return the data
-  #data
+  data
 }
