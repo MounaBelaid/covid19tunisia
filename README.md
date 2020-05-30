@@ -61,19 +61,19 @@ head(data_transformed)
             marker = list(color = '#fec44f'),
             line = list(color = '#fec44f'),
             hoverinfo = "text",
-            text = ~paste(cases_new, "New confirmed cases\n",cumsum(cases_new), 'Total number of infected cases on',date)) %>%
+            text = ~paste(cases_new, "New confirmed cases\n",cumsum(cases_new), 'Total number of infected cases on', date)) %>%
   add_trace(x = ~date, y = ~cumsum(deaths_new),
             name = 'Deaths',
             marker = list(color = 'red'),
             line = list(color = 'red'),
             hoverinfo = "text",
-            text = ~paste(deaths_new, "New deaths\n",cumsum(deaths_new), 'Total number of deaths on',date)) %>%
+            text = ~paste(deaths_new, "New deaths\n",cumsum(deaths_new), 'Total number of deaths on', date)) %>%
   add_trace(x = ~date, y = ~cumsum(recovered_new), 
             name = 'Recovered cases',
             marker = list(color = 'green'),
             line = list(color = 'green'),
             hoverinfo = "text",
-            text = ~paste(recovered_new, "New recovered cases\n",cumsum(recovered_new), 'Total number of recovered cases on',date)) %>% 
+            text = ~paste(recovered_new, "New recovered cases\n",cumsum(recovered_new), 'Total number of recovered cases on', date)) %>% 
   layout(title = 'Tunisia - Daily Evolution of Active COVID19 Cases',
          legend = list(x = 0.1, y = 0.9,
                        font = list(family = "sans-serif", size = 14, color = "#000"), bgcolor = "",
