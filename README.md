@@ -87,7 +87,7 @@ head(data_transformed)
 
 ## Supporting Shiny Application
 
-A supporting Shiny Application for the **covid19tunisia** datasets available
+A supporting Shiny Application for the **covid19tunisia** dataset available
 [here](https://mounabelaid.shinyapps.io/coronavirus/).
 
 <img src="man/figures/shinyapp.PNG" width="100%" />
