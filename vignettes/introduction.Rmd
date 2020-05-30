@@ -32,6 +32,7 @@ You can install the released version of covid19tunisia from [CRAN](https://cran.
 ``` r
 install.packages("covid19tunisia")
 ```
+
 ## Overview
 
 The `covid19tunisia` dataset provides an overall summary of the cases in Tunisia since the beginning of the covid19 outbreak on 
