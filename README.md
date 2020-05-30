@@ -76,7 +76,7 @@ head(data_transformed)
             text = ~paste(recovered_new, "New recovered cases\n",cumsum(recovered_new), 'Total number of recovered cases on',date)) %>% 
   layout(title = 'Tunisia - Daily Evolution of Active COVID19 Cases',
          legend = list(x = 0.1, y = 0.9,
-                       font = list(family = "sans-serif",size = 14,color = "#000"),bgcolor = "",
+                       font = list(family = "sans-serif", size = 14, color = "#000"), bgcolor = "",
                        bordercolor = "#FFFFFF", borderwidth = 2),
          xaxis = list(title = ""),
          yaxis = list(side = 'left', title = 'Daily evolution', showgrid = TRUE, zeroline = TRUE))
