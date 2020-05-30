@@ -20,14 +20,3 @@ test_that("original cols we care about are still there", {
 })
 
 
-test_that("cleaning and averaging", {
-  clean <-
-    read_data() %>%
-    clean_data()
-
-  avg <-
-    clean %>%
-    average_data()
-
-  expect_gte(nrow(avg), 50)
-})
