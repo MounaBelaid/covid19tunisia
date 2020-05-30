@@ -1,5 +1,5 @@
 #' ----------------------------------------
-#' Script to startup the a covid19tunisia package
+#' Script to startup the covid19tunisia package
 #' using usethis
 #' ----------------------------------------
 
