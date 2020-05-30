@@ -84,3 +84,10 @@ head(data_transformed)
 ```
 
 <img src="man/figures/daily_evolution.png" width="100%" />
+
+## Supporting Shiny Application
+
+A supporting Shiny Application for the **covid19tunisia** datasets available
+[here](https://mounabelaid.shinyapps.io/coronavirus/).
+
+<img src="man/figures/shinyapp.png" width="100%" />
