@@ -15,7 +15,7 @@ use_LICENSE_FUNCTION()
 # imports packages
 use_package("magrittr")
 use_package("tibble")
- # use_package("PKG_TO_IMPORT")
+# use_package("PKG_TO_IMPORT")
 
 # suggests packages
 # use_package("PKG_TO_SUGGEST", type = "Suggests")
