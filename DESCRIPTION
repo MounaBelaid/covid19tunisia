@@ -9,6 +9,7 @@ Authors@R:
 Description: Data personnally collected about the spread of COVID-19 (SARS-COV-2) in Tunisia.
 <https://github.com/MounaBelaid/covid19datatunisia>
 License: MIT + file LICENSE
+URL: https://github.com/MounaBelaid/covid19tunisia
 Depends: 
     R (>= 2.10)
 Imports:
