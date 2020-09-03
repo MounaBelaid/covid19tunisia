@@ -90,4 +90,4 @@ head(data_transformed)
 A supporting Shiny Application for the **covid19tunisia** dataset available
 [here](https://mounabelaid.shinyapps.io/coronavirus/).
 
-<img src="man/figures/shinyapp.PNG" width="100%" />
+<img src="man/figures/shinyapp1.PNG" width="100%" />
