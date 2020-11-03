@@ -6,7 +6,7 @@ Please check out this [link](https://github.com/MounaBelaid/covid19datatunisia).
 
 ## Installation
 
-You can install the released version of covid19tunisia with:
+Using the programming language [R](https://www.r-project.org/), you can install the released version of covid19tunisia with:
 
 ``` r
 remotes::install_github("MounaBelaid/covid19tunisia")
